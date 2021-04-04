@@ -1,0 +1,126 @@
+.article-comment-pad {
+  height: 90vh;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border-left: 0.2rem solid black;
+  overflow-y: auto;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0.1rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+  }
+
+  .title {
+    padding-bottom: 1rem;
+    display: flex;
+    font-weight: 600;
+    font-size: 1.4rem;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+
+    p {
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    &:before {
+      content: "";
+      flex: 1;
+      border-bottom: 0.2rem solid black;
+    }
+
+    &:after {
+      content: "";
+      flex: 1;
+      border-bottom: 0.2rem solid black;
+    }
+  }
+
+  .comment-pad{
+    z-index: 1;
+    .comment-item{
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 0.1rem solid black;
+      .content{
+        padding: 0.5rem 1rem;
+        font-size: 1.4rem;
+      }
+      .info{
+        font-size: 1.2rem;
+        font-weight: 200;
+        display: flex;
+        justify-content: space-between;
+        span:first-child{
+          font-weight: 600;
+        }
+      }
+      .action{
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 200;
+        user-select: none;
+        span{
+          margin-left: 0.5rem;
+          &:hover{
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .textarea-pad {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
+    .button-group {
+      z-index: 2;
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 0.5rem;
+      background-color: white;
+
+      .button {
+        margin-left: 2rem;
+        padding: 0.5rem 1rem;
+        background-color: #1c1c1c;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+
+    .textarea {
+      border: 0.2rem solid gray;
+      padding: 1rem;
+      font-size: 1.2rem;
+
+      &:focus {
+        outline: none;
+        border-color: black;
+      }
+    }
+  }
+}

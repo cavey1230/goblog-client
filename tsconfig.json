@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "esModuleInterop":true,
+  },
+  "exclude": [
+    "./build",
+    "./node_modules",
+    "./webpack-dev-config.js",
+    "./webpack-pro-config.js",
+    "./postcss.config.js"
+  ]
+}

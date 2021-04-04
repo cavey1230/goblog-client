@@ -1,0 +1,248 @@
+// markdown样式
+.custom-html-style {
+  color: #333
+}
+
+.custom-html-style h1 {
+  font-size: 32px;
+  padding: 0;
+  border: none;
+  font-weight: 700;
+  margin: 32px 0;
+  line-height: 1.2
+}
+
+.custom-html-style h2 {
+  font-size: 24px;
+  padding: 0 0;
+  border: none;
+  font-weight: 700;
+  margin: 24px 0;
+  line-height: 1.7
+}
+
+.custom-html-style h3 {
+  font-size: 18px;
+  margin: 18px 0;
+  padding: 0 0;
+  line-height: 1.7;
+  border: none
+}
+
+.custom-html-style p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin: 8px 0
+}
+
+.custom-html-style a {
+  color: #0052d9
+}
+
+.custom-html-style a:hover {
+  text-decoration: none
+}
+
+.custom-html-style strong {
+  font-weight: 700
+}
+
+.custom-html-style ol, .custom-html-style ul {
+  font-size: 1.4rem;
+  line-height: 28px;
+  padding-left: 36px
+}
+
+.custom-html-style li {
+  margin-bottom: 8px;
+  line-height: 1.7
+}
+
+.custom-html-style hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee
+}
+
+.custom-html-style pre {
+  display: block;
+  padding: 20px;
+  line-height: 28px;
+  word-break: break-word
+}
+
+.custom-html-style code, .custom-html-style pre {
+  background-color: #f3f3f3;
+  font-size: 1.4rem;
+  border-radius: 0;
+  overflow-x: auto
+}
+
+.custom-html-style code {
+  padding: 3px 0;
+  margin: 0;
+  word-break: normal
+}
+
+.custom-html-style code:after, .custom-html-style code:before {
+  letter-spacing: 0
+}
+
+.custom-html-style blockquote {
+  position: relative;
+  margin: 16px 0;
+  padding: 5px 8px 5px 30px;
+  background: none repeat scroll 0 0 rgba(102, 128, 153, .05);
+  border: none;
+  color: #333;
+  border-left: 10px solid #d6dbdf
+}
+
+.custom-html-style img, .custom-html-style video {
+  max-width: 100%
+}
+
+.custom-html-style table {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  max-width: 100%;
+  overflow: auto;
+  border: 1px solid #f6f6f6;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.custom-html-style table td, .custom-html-style table th {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal
+}
+
+.custom-html-style table tr {
+  border: 1px solid #efefef
+}
+
+.custom-html-style table tr:nth-child(2n) {
+  background-color: transparent
+}
+
+.custom-html-style table th {
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #efefef;
+  padding: 10px 6px;
+  background-color: #f5f7fa;
+  word-break: break-word
+}
+
+.custom-html-style table td {
+  border: 1px solid #efefef;
+  text-align: left;
+  padding: 10px 15px;
+  word-break: break-word;
+  min-width: 60px
+}
+
+.my-high-light-js {
+  display: block !important;
+  overflow-x: auto !important;
+  background: #f3f3f3 !important;
+  color: #494949 !important;
+  padding: 0.5em !important;
+
+  .hljs-emphasis {
+    font-style: italic;
+  }
+
+  .hljs-strong {
+    font-weight: bold;
+  }
+
+  .hljs-comment,
+  .hljs-quote {
+    color: #696969;
+  }
+
+  /* Red */
+
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-tag,
+  .hljs-name,
+  .hljs-selector-id,
+  .hljs-selector-class,
+  .hljs-regexp,
+  .hljs-deletion {
+    color: #d91e18;
+  }
+
+  /* Orange */
+
+  .hljs-number,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-literal,
+  .hljs-type,
+  .hljs-params,
+  .hljs-meta,
+  .hljs-link {
+    color: #aa5d00;
+  }
+
+  /* Yellow */
+
+  .hljs-attribute {
+    color: #d17200;
+  }
+
+  /* Green */
+
+  .hljs-string,
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-addition {
+    color: #009a00;
+  }
+
+  /* Blue */
+
+  .hljs-title,
+  .hljs-section {
+    color: #007faa;
+  }
+
+  /* Purple */
+
+  .hljs-keyword,
+  .hljs-selector-tag {
+    color: #8d15c8;
+  }
+
+  @media screen and (-ms-high-contrast: active) {
+    .hljs-addition,
+    .hljs-attribute,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-bullet,
+    .hljs-comment,
+    .hljs-link,
+    .hljs-literal,
+    .hljs-meta,
+    .hljs-number,
+    .hljs-params,
+    .hljs-string,
+    .hljs-symbol,
+    .hljs-type,
+    .hljs-quote {
+      color: highlight;
+    }
+
+    .hljs-keyword,
+    .hljs-selector-tag {
+      font-weight: bold;
+    }
+  }
+}

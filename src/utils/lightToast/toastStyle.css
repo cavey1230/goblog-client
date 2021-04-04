@@ -1,0 +1,29 @@
+.toast-margin {
+    position: fixed;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px 6px 10px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    top: 5%;
+    left: 50%;
+    max-width: 150px;
+    text-align: center;
+    transition: all .3s;
+    color: #1c1c1c;
+    box-shadow: 0 3px 10px 1px #d8d8d8;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.toast-margin > span {
+    padding: 5px;
+}
+.toast-margin > img {
+    margin-top: 5px;
+    font-size: 2rem;
+    width: 2rem;
+}

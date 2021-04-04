@@ -1,0 +1,92 @@
+.operation-pad {
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+
+  .center-pad {
+    width: 90%;
+    height: 80%;
+
+    .title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .form-pad {
+      padding: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .info {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+      }
+
+      .button {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 2rem;
+        background-color: black;
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 1px 2px 6px 0px grey;
+
+        &:active {
+          width: 99%;
+          box-shadow: none;
+        }
+      }
+
+      .input-item {
+        width: 100%;
+        display: flex;
+        margin-bottom: 2rem;
+
+        label {
+          font-size: 1.6rem;
+          font-weight: 200;
+          margin-right: 1rem;
+
+          &:after {
+            content: ":";
+          }
+        }
+
+        input {
+          flex: 1;
+          border: 0;
+          font-size: 1.4rem;
+          border-bottom: 0.2rem solid black;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.login-and-register-pad {
+  position: absolute;
+  width: calc(100% - 8rem);
+  display: flex;
+  justify-content: flex-end;
+
+  .button {
+    font-size: 1.4rem;
+    font-weight: 200;
+    cursor: pointer;
+    color: black;
+    padding: 0.5rem 1rem;
+    user-select: none;
+    border-bottom: 0.2rem solid black;
+  }
+}

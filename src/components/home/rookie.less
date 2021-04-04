@@ -1,0 +1,95 @@
+.rookie-pad {
+  display: flex;
+  flex-direction: column;
+
+  .rookie-pad-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    .right-pad {
+      left: 70%;
+      position: absolute;
+      height: 100%;
+      width: 30%;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 80%;
+        height: 90%;
+        object-fit: cover;
+        filter: grayscale(0.6);
+      }
+    }
+
+    .left-pad {
+      width: 70%;
+      padding: 0 1rem;
+
+      .title {
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+        display: flex;
+        padding: 1rem;
+        //border-bottom: 0.5rem solid black;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        font-size: 1.4rem;
+        align-items: center;
+
+        div{
+          width: 100%;
+          display: flex;
+        }
+
+        p {
+          margin: 0 0 0 1rem;
+          letter-spacing: 0.5rem;
+          font-weight: 200;
+        }
+      }
+
+      .content-group {
+        display: flex;
+        padding: 1rem;
+        position: relative;
+        font-size: 1.4rem;
+        font-weight: 200;
+        justify-content: space-evenly;
+
+        p {
+          margin: 0;
+        }
+
+        .content-item {
+          width: 50%;
+          position: relative;
+
+          &:first-child {
+            margin-right: 2rem;
+
+            p:first-child {
+              text-indent: 3rem;
+
+              &:first-letter {
+                font-size: 2rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

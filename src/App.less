@@ -1,0 +1,98 @@
+.queue-anim-entering {
+  animation: entering 0.5s ease-in-out;
+  @keyframes entering {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.queue-anim-leaving {
+  opacity: 0;
+}
+
+.app-pad {
+  min-width: 1366px;
+  max-width: 1920px;
+  width: 100%;
+  padding: 2rem 4rem;
+  margin: 0 auto;
+  position: relative;
+
+  .navbar-link {
+    width: 100%;
+    height: 100%;
+    min-height: 5.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    user-select: none;
+
+    .navbar-link-items {
+      height: 100%;
+      display: flex;
+      position: relative;
+      a,.out-item{
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        height: 100%;
+        color: #1c1c1c;
+        display: block;
+        //border-right: 0.2rem solid black;
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+
+    .copy-right {
+      letter-spacing: 2rem;
+    }
+
+    .big-title {
+      font-size: 8rem;
+      font-weight: 900;
+      margin-top: -2rem;
+      position: relative;
+
+      .text {
+        display: inline-block;
+        letter-spacing: 2rem;
+      }
+
+      span {
+        margin-left: 1rem;
+        top: 44%;
+        position: absolute;
+        font-weight: 200;
+        font-size: 1.2rem;
+      }
+    }
+
+    .web-stack {
+      margin-top: -1rem;
+
+      .text {
+        display: inline-block;
+        letter-spacing: 0.5rem;
+      }
+    }
+  }
+
+  .app-hr {
+    margin-top: 1rem;
+    background-color: black;
+    width: 100%;
+    height: 0.5rem;
+  }
+
+}

@@ -1,0 +1,15 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+}
+
+@media screen and (min-width: 1920px) {
+    body, html {
+        font-size: 75.0%;
+    }
+}
